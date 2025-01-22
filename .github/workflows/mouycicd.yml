@@ -10,5 +10,12 @@ on:
 
 jobs:
   build:        
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python environment 3.13
+        uses: actions/setup-python@v3
+        with:
+          python-version: '13'
+     
      
