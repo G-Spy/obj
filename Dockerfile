@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV SERVER_PORT 8000
 
 # Expose the port for external access
-EXPOSE 8200
+EXPOSE 8000
 
 # Run the application
 CMD ["python", "runserver.py"]
